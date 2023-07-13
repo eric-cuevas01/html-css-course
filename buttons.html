@@ -3,12 +3,16 @@
     background-color: rgb(200, 0, 0);
     color: white;
     border: none;
-    height: 36px;
-    width: 105px;
     border-radius: 2px;
     cursor: pointer;
     margin-right: 8px;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
     transition: opacity 0.15s;
+    vertical-align: top;
   }
 
   .subscribe-button:hover {
@@ -21,20 +25,21 @@
 
   .join-button {
     background-color: white;
-    border-color: rgb(89, 144, 239);
+    border-color: rgb(6, 95, 212);
     border-style: solid;
     border-width: 1px;
-    color: rgb(89, 144, 239);
-    height: 36px;
-    width: 60px;
+    color: rgb(6, 95, 212);
     border-radius: 2px;
     cursor: pointer;
-    
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
     transition: background-color 0.15s, color 0.15s;
   }
 
   .join-button:hover {
-    background-color: rgb(89, 144, 239);
+    background-color: rgb(6, 95, 212);
     color: white;
   }
 
@@ -44,7 +49,7 @@
   }
 
   .tweet-button {
-    background-color: rgb(2, 158, 355);
+    background-color: rgb(29, 155, 240);
     color: white;
     border: none;
     height: 36px;
@@ -55,10 +60,98 @@
     cursor: pointer;
     margin-left: 8px;
     transition: box-shadow .15s;
+    vertical-align: top;
   }
 
   .tweet-button:hover {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .back-button {
+    margin-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 16px;
+  }
+
+  .search-result {
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: 18px;
+  }
+
+  .next-button {
+    margin-left: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 16px;
+  }
+
+  .stretch-button {
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    transition: padding-top 1s,
+      padding-bottom 1s,
+      padding-left 1s,
+      padding-right 1s;
+  }
+
+  .stretch-button:hover {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .shadow-button {
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .shadow-button:active {
+    margin-top: 3px;
+    margin-left: 3px;
+    box-shadow: none;
+  }
+
+  .stretch-button {
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    transition: padding 0.15s,
+      margin 0.15s;
+  }
+
+  .stretch-button:hover {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 </style>
 
@@ -72,4 +165,30 @@
 
 <button class="tweet-button">
   Tweet
+</button>
+
+<button class="back-button">Back</button>
+<a class="search-result" href="https://google.com">1</a>
+<a class="search-result" href="https://google.com">2</a>
+<a class="search-result" href="https://google.com">3</a>
+<a class="search-result" href="https://google.com">4</a>
+<a class="search-result" href="https://google.com">5</a>
+<button class="next-button">Next</button>
+
+<button class="stretch-button">
+  Stretch
+</button>
+
+<button class="shadow-button">
+  Shadow
+</button>
+
+<button class="stretch-button">
+  One
+</button>
+<button class="stretch-button">
+  Two
+</button>
+<button class="stretch-button">
+  Three
 </button>
